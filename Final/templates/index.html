@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>進出紀錄</title>
+    <div class="search">
+        <form method="post">
+            <input type="date" name="search"><br><br>
+            <input type="submit" value="search">
+        </form>
+    </div>
+    <div class="data">
+        <ul>
+            {% for item in time %}
+                <li style="font-size: large;">{{ item }}</li>
+                <br>
+            {% endfor %}
+        </ul>        
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
